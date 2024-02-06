@@ -52,7 +52,7 @@ jobs:
           COVERAGE_DIR: reports/coverage
           RESULTS_DIR: reports/results
 
-      - name: Release with release-it
+      - name: Release with release-it 🥳🥳🥳
         run: |
           echo "$RELEASE_LEVEL"
           git config user.name "${{ github.actor }}"
