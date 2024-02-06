@@ -57,7 +57,10 @@ jobs:
           echo "$RELEASE_LEVEL"
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          npm run release-it-$RELEASE_LEVEL --github-assets=reports/results/*.zip
+          npm run release-it-$RELEASE_LEVEL
+        
+      - name: Upload artifacts as well
+        run: npm run release-it --no-increment --no-git --github.update --github.assets=reports/results/*.zip --no-github.draft
       
         env:
           RELEASE_LEVEL: ${{ github.event.inputs.version_inc || 'patch' }}

@@ -81,11 +81,7 @@
   },
   "release-it": {
     "github": {
-      "release": true,
-      "draft": true,
-      "assets": [
-        "reports/*.zip"
-      ]
+      "release": true
     },
     "npm": {
       "publish": false
