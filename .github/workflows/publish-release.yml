@@ -1,0 +1,67 @@
+name: Publish release notes
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: "git commit sha to be released"
+        required: true
+        default: "main"
+      version_inc:
+        description: "specify part of the semver version to be updated, should be major, minor or patch."
+        type: choice
+        required: true
+        default: "minor"
+        options:
+          - "major"
+          - "minor"
+          - "patch"
+
+env:
+  NODE_VERSION: "20.9.x" # set this to the node version to use
+  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_REGISTRY_URL: https://npm.pkg.github.com/
+
+jobs:
+  publish-release-notes:
+    runs-on: general-runners-static-ip
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - run: npm ci
+
+      - name: Get reports
+        run: |
+          mkdir -p ${{ env.COVERAGE_DIR }} ${{ env.RESULTS_DIR }}
+
+          # Unit Tests
+          LAST_UNIT_TESTS_ON_MAIN=$(gh run list -b main -w "Unit Tests" --json databaseId --jq '.[0].databaseId')
+          gh run download $LAST_UNIT_TESTS_ON_MAIN -n test-coverage -n test-results --dir reports/unit
+          mv reports/unit/coverage/cobertura-coverage.xml ${{ env.COVERAGE_DIR }}/unit.xml
+          mv reports/unit/results/results.xml ${{ env.RESULTS_DIR }}/unit.xml
+
+          # ADD CYPRESS Tests here
+
+          zip -j test-coverage.zip ${{ env.COVERAGE_DIR }}/*
+          zip -j test-results.zip ${{ env.RESULTS_DIR }}/*
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COVERAGE_DIR: reports/coverage
+          RESULTS_DIR: reports/results
+
+      - name: Release with release-it
+        run: |
+          echo "$RELEASE_LEVEL"
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          npm run release-it-$RELEASE_LEVEL
+        env:
+          RELEASE_LEVEL: ${{ github.event.inputs.version_inc || 'patch' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

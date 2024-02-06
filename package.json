@@ -8,11 +8,15 @@
     "start": "vite",
     "test:svelte": "vitest --config=vitest.config.svelte.ts",
     "test:all": "vitest",
+    "test:unit:ci": "TZ=UTC LC_ALL=de_DE.UTF-8 vitest run --coverage.enabled --coverage.reporter='text-summary' --coverage.reporter='cobertura'",
     "test:accessibility": "vitest accessibility --run",
     "coverage": "vitest --coverage --run",
     "test": "vitest",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release-it-patch": "release-it patch -n --verbose",
+    "release-it-minor": "release-it minor -n --verbose",
+    "release-it-major": "release-it major -n --verbose"
   },
   "keywords": [
     "react",
@@ -66,6 +70,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.4",
+    "release-it": "^17.0.3",
     "svelte-preprocess": "^5.0.3",
     "tailwindcss": "^3.2.7",
     "ts-jest": "^29.0.5",
@@ -73,5 +78,10 @@
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
     "vitest": "0.29.2"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }

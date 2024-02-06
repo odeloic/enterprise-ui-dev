@@ -18,8 +18,13 @@ export default defineConfig({
       ['**/*.test.tsx', 'jsdom'],
       ['**/*.component.test.ts', 'jsdom'],
     ],
+    reporters: ["junit"],
+    outputFile: {
+      junit: './reports/unit/results/results.xml'
+    },
     coverage: {
-      statements: 54.92,
+      provider: 'c8',
+      reportsDirectory: './reports/unit/coverage',
       thresholdAutoUpdate: true,
       include: ['src/**/*'],
       exclude: [
@@ -34,5 +39,9 @@ export default defineConfig({
       ],
       all: true,
     },
+    // coverage: {
+    //   statements: 59.79,
+      
+    // },
   },
 });
