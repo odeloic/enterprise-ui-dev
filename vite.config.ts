@@ -12,6 +12,16 @@ const configuration: UserConfig = {
       $components: path.resolve(__dirname, './src/components'),
     },
   },
+  test: {
+    globals: true,
+    reporters: ["junit"],
+    outputFile: 'reports/unit/results/results.xml',
+    coverage: {
+      provider: 'v8',
+      reportsDirectory: 'reports/unit/coverage',
+      include: ['src/examples/*'],
+    },
+  }
 };
 
 export default configuration;

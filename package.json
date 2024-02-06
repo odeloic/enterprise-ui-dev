@@ -8,6 +8,7 @@
     "start": "vite",
     "test:svelte": "vitest --config=vitest.config.svelte.ts",
     "test:all": "vitest",
+    "test:unit:ci": "TZ=UTC LC_ALL=de_DE.UTF-8 vitest run --coverage.enabled --coverage.reporter='text-summary' --coverage.reporter='cobertura'",
     "test:accessibility": "vitest accessibility --run",
     "coverage": "vitest --coverage --run",
     "test": "vitest",

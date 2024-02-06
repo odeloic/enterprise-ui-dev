@@ -15,7 +15,24 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
       - run: npm ci
-      - run: npm test
+      - run: npm run test:unit:ci
+      - name: Upload coverage Reports
+        uses: actions/upload-artifacts@v4
+        if: success() || failure()
+        with:
+          name: test-coverage
+          retention-days: 3
+          path: |
+            reports/unit/coverage/cobertura-coverage.xml
+
+      - name: Upload coverage Reports
+        uses: actions/upload-artifacts@v4
+        if: success() || failure()
+        with:
+          name: test-results
+          retention-days: 3
+          path: |
+            reports/unit/results/results.xml
   build:
     runs-on: ubuntu-latest
 
