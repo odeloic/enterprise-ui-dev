@@ -64,6 +64,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifacts as well
-        run: npm run release-it --no-increment --no-git --github.update --github.assets=reports/results/*.zip --no-github.draft
+        run: npm run release --no-increment --no-git --github.update --github.assets=reports/results/*.zip --no-github.draft
       
         
