@@ -42,8 +42,8 @@ jobs:
           # Unit Tests
           LAST_UNIT_TESTS_ON_MAIN=$(gh run list -b main -w "Test & Build" --json databaseId --jq '.[0].databaseId')
           gh run download $LAST_UNIT_TESTS_ON_MAIN -n test-coverage -n test-results --dir reports/unit
-          mv reports/unit/coverage/cobertura-coverage.xml ${{ env.COVERAGE_DIR }}/unit.xml
-          mv reports/unit/results/results.xml ${{ env.RESULTS_DIR }}/unit.xml
+          mv reports/unit/test-coverage/cobertura-coverage.xml ${{ env.COVERAGE_DIR }}/unit.xml
+          mv reports/unit/test-results/results.xml ${{ env.RESULTS_DIR }}/unit.xml
 
           # ADD CYPRESS Tests here
 
