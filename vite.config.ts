@@ -1,9 +1,9 @@
 import path from 'node:path';
-import { defineConfig, UserConfig } from 'vite';
+import { defineConfig, UserConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
-const configuration: UserConfig = {
+export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
@@ -15,13 +15,14 @@ const configuration: UserConfig = {
   test: {
     globals: true,
     reporters: ["junit"],
-    outputFile: 'reports/unit/results/results.xml',
+    outputFile: {
+      junit: './reports/unit/results/results.xml'
+    },
     coverage: {
-      provider: 'v8',
-      reportsDirectory: 'reports/unit/coverage',
-      include: ['src/examples/*'],
+      provider: 'c8',
+      reportsDirectory: './reports/unit/coverage',
+      include: ['src/*'],
     },
   }
-};
+})
 
-export default configuration;

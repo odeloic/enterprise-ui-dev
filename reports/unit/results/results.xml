@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="332" failures="0" errors="0" time="2.093">
+    <testsuite name="src/lib/get-area.test.ts" timestamp="2024-02-06T06:17:37.592Z" hostname="Loics-MBP" tests="16" failures="0" errors="0" skipped="0" time="0.002">
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 3 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 4 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 5 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 6 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 7 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 8 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 9 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 10 sides with a length of 10" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 3 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 4 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 5 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 6 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 7 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 8 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 9 sides with a length of 20" time="0">
+        </testcase>
+        <testcase classname="src/lib/get-area.test.ts" name="it should correctly calculate the area for a polygon with 10 sides with a length of 20" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/person.test.ts" timestamp="2024-02-06T06:17:37.593Z" hostname="Loics-MBP" tests="21" failures="0" errors="0" skipped="0" time="0.004">
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with {firstName: &apos;Madonna&apos;, middleName: undefined, lastName: undefined} results in a full name of &apos;Madonna&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with {firstName: &apos;Madonna&apos;, middleName: undefined, lastName: &apos;Cicone&apos;} results in a full name of &apos;Madonna Cicone&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with {firstName: &apos;Madonna&apos;, middleName: &apos;Louise&apos;, lastName: &apos;Cicone&apos;} results in a full name of &apos;Madonna Louise Cicone&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with full name of &apos;Madonna&apos; parses to [&apos;Madonna&apos;, undefined, undefined]" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with full name of &apos;Madonna Cicone&apos; parses to [&apos;Madonna&apos;, undefined, &apos;Cicone&apos;]" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; creating a person with full name of &apos;Madonna Louise Cicone&apos; parses to [&apos;Madonna&apos;, &apos;Louise&apos;, &apos;Cicone&apos;]" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; updating a full name parses correctly" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; updating a full name parses correctly" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; updating a full name parses correctly" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will throw if you provide an empty string" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will throw a specific error message if you provide an empty string" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will add a friend" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will mutually add a friend" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will remove a friend" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="Person &gt; will mutually remove friends" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="createPerson &gt; should create an instance of a Person" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="isFriend &gt; return true if two people are friends" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="isFriendOfFriend &gt; is true that &apos;John Lennon&apos; knows &apos;Paul McCartney&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="isFriendOfFriend &gt; is true that &apos;John Lennon&apos; knows &apos;George Harrison&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="isFriendOfFriend &gt; is true that &apos;John Lennon&apos; knows &apos;Ringo Starr&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/person.test.ts" name="isFriendOfFriend &gt; is false that &apos;John Lennon&apos; knows &apos;Benjamin Oliver&apos;" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/polygon.test.ts" timestamp="2024-02-06T06:17:37.594Z" hostname="Loics-MBP" tests="66" failures="0" errors="0" skipped="0" time="0.007">
+        <testcase classname="src/lib/polygon.test.ts" name="createPolygon &gt; should create an object that is an instance of the Polygon class" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; should throw an error if given less than 3 sides" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 3 sides should be consider a triangle" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 4 sides should be consider a quadrilateral" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 5 sides should be consider a pentagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 6 sides should be consider a hexagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 7 sides should be consider a heptagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 8 sides should be consider a octagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 9 sides should be consider a nonagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 10 sides should be consider a decagon" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 3 sides should be considered a &apos;triangle&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 4 sides should be considered a &apos;quadrilateral&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 5 sides should be considered a &apos;pentagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 6 sides should be considered a &apos;hexagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 7 sides should be considered a &apos;heptagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 8 sides should be considered a &apos;octagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 9 sides should be considered a &apos;nonagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="Polygon &gt; a polygon with 10 sides should be considered a &apos;decagon&apos;" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should have 3 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should have the correct type" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;triangle&apos; &gt; should generate JSON that matches the snapshot" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should have 4 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;quadrilateral&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should have 5 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;pentagon&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should have 6 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;hexagon&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should have 7 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;heptagon&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should have 8 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;octagon&apos; &gt; should generate JSON that matches the snapshot" time="0.001">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should have 9 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;nonagon&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should have 10 sides" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/lib/polygon.test.ts" name="&apos;decagon&apos; &gt; should generate JSON that matches the snapshot" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/asynchronicity/anti-pattern.test.ts" timestamp="2024-02-06T06:17:37.597Z" hostname="Loics-MBP" tests="3" failures="0" errors="0" skipped="0" time="0.007">
+        <testcase classname="src/examples/asynchronicity/anti-pattern.test.ts" name="Asynchronous code accidentally passes" time="0">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/anti-pattern.test.ts" name="Asynchronous code has zero expectations" time="0">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/anti-pattern.test.ts" name="Code inside of callback never runs" time="0.002">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/asynchronicity/async-add.test.ts" timestamp="2024-02-06T06:17:37.597Z" hostname="Loics-MBP" tests="5" failures="0" errors="0" skipped="0" time="0.006">
+        <testcase classname="src/examples/asynchronicity/async-add.test.ts" name="fails if you don&apos;t use an async function" time="0.003">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/async-add.test.ts" name="passes if use an `async/await`" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/async-add.test.ts" name="passes if we expect it to resolve" time="0">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/async-add.test.ts" name="passes if we expect to reject" time="0">
+        </testcase>
+        <testcase classname="src/examples/asynchronicity/async-add.test.ts" name="allows us to catch the error in an async/await" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/counter/counter.exercise.test.tsx" timestamp="2024-02-06T06:17:37.597Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="2" time="0.053">
+        <testcase classname="src/examples/counter/counter.exercise.test.tsx" name="it should render the component" time="0.013">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.exercise.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed" time="0.037">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.exercise.test.tsx" name="it should render the component with an initial count" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/counter/counter.exercise.test.tsx" name="it should reset the count when the &quot;Reset&quot; button is pressed" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/counter/counter.extension.test.tsx" timestamp="2024-02-06T06:17:37.598Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="0.061">
+        <testcase classname="src/examples/counter/counter.extension.test.tsx" name="it should render the component" time="0.013">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.extension.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed" time="0.034">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.extension.test.tsx" name="it should render the component with an initial count" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.extension.test.tsx" name="it should reset the count when the &quot;Reset&quot; button is pressed" time="0.011">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/counter/counter.solution.test.tsx" timestamp="2024-02-06T06:17:37.598Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="0.062">
+        <testcase classname="src/examples/counter/counter.solution.test.tsx" name="it should render the component" time="0.013">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.solution.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed" time="0.034">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.solution.test.tsx" name="it should render the component with an initial count" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/counter/counter.solution.test.tsx" name="it should reset the count when the &quot;Reset&quot; button is pressed" time="0.012">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/counter/counter.test.tsx" timestamp="2024-02-06T06:17:37.598Z" hostname="Loics-MBP" tests="2" failures="0" errors="0" skipped="2" time="0">
+        <testcase classname="src/examples/counter/counter.test.tsx" name="it should render the component" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/counter/counter.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/getting-started/example.test.ts" timestamp="2024-02-06T06:17:37.598Z" hostname="Loics-MBP" tests="6" failures="0" errors="0" skipped="1" time="0.007">
+        <testcase classname="src/examples/getting-started/example.test.ts" name="should work" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/getting-started/example.test.ts" name="works witn &quot;test&quot; as well" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/example.test.ts" name="should be able to expect a test to fail" time="0.002">
+        </testcase>
+        <testcase classname="src/examples/getting-started/example.test.ts" name="works when returning a promise" time="0.002">
+        </testcase>
+        <testcase classname="src/examples/getting-started/example.test.ts" name="it should run in development" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/getting-started/example.test.ts" name="it should run in test" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/getting-started/exponent.test.ts" timestamp="2024-02-06T06:17:37.599Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="0.001">
+        <testcase classname="src/examples/getting-started/exponent.test.ts" name="exponent &gt; should correctly calcuate the exponent of a number" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/exponent.test.ts" name="square &gt; should correctly calcuate the square of a number" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/exponent.test.ts" name="square &gt; should be the same as multiplying a number by itself" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/exponent.test.ts" name="cube &gt; should correctly calcuate the cube of a number" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/getting-started/math.test.ts" timestamp="2024-02-06T06:17:37.599Z" hostname="Loics-MBP" tests="8" failures="0" errors="0" skipped="0" time="0.004">
+        <testcase classname="src/examples/getting-started/math.test.ts" name="add &gt; should add two numbers correctly" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="add &gt; should not add two numbers incorrectly" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="subtract &gt; should subtract the subtrahend from the minuend" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="subtract &gt; should not subtract two numbers incorrectly" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="multiply &gt; should multiply the multiplicand by the multiplier" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="multiply &gt; should not multiply two numbers incorrectly" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="divide &gt; should multiply the multiplicand by the multiplier" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/math.test.ts" name="divide &gt; should not multiply two numbers incorrectly" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/getting-started/words.test.ts" timestamp="2024-02-06T06:17:37.599Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="0.002">
+        <testcase classname="src/examples/getting-started/words.test.ts" name="repeat &gt; should repeat the word three times by default" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/getting-started/words.test.ts" name="repeat &gt; should repeat the word a certain number of times" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/words.test.ts" name="makeLouder &gt; should repeat the word three times by default" time="0">
+        </testcase>
+        <testcase classname="src/examples/getting-started/words.test.ts" name="embolden &gt; should wrap a fiven string in &lt;b&gt; tags like it is 1999" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/counter-context/counter.test.tsx" timestamp="2024-02-06T06:17:37.599Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="0.059">
+        <testcase classname="src/examples/counter-context/counter.test.tsx" name="it should render the component" time="0.013">
+        </testcase>
+        <testcase classname="src/examples/counter-context/counter.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed" time="0.032">
+        </testcase>
+        <testcase classname="src/examples/counter-context/counter.test.tsx" name="it should render the component (again)" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/counter-context/counter.test.tsx" name="it should increment when the &quot;Increment&quot; button is pressed (again)" time="0.012">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/obstacle-course/accessibility.test.tsx" timestamp="2024-02-06T06:17:37.600Z" hostname="Loics-MBP" tests="1" failures="0" errors="0" skipped="0" time="0.119">
+        <testcase classname="src/examples/obstacle-course/accessibility.test.tsx" name="should demonstrate this matcher`s usage" time="0.118">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/obstacle-course/exercise.test.tsx" timestamp="2024-02-06T06:17:37.600Z" hostname="Loics-MBP" tests="8" failures="0" errors="0" skipped="8" time="0">
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should input text into the input field" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should control a select input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a checkbox input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a radio input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a color input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a date input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a range input" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/obstacle-course/exercise.test.tsx" name="should find and control a file input" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/asymmetric-matchers.complete.test.ts" timestamp="2024-02-06T06:17:37.600Z" hostname="Loics-MBP" tests="1" failures="0" errors="0" skipped="0" time="0.001">
+        <testcase classname="src/examples/great-expectations/asymmetric-matchers.complete.test.ts" name="include cool computer scientists by virtue of them being in the club" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/asymmetric-matchers.test.ts" timestamp="2024-02-06T06:17:37.600Z" hostname="Loics-MBP" tests="1" failures="0" errors="0" skipped="0" time="0.002">
+        <testcase classname="src/examples/great-expectations/asymmetric-matchers.test.ts" name="include cool computer scientists by virtue of them being in the club" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/bonus-exercise.complete.test.ts" timestamp="2024-02-06T06:17:37.600Z" hostname="Loics-MBP" tests="3" failures="0" errors="0" skipped="0" time="0.004">
+        <testcase classname="src/examples/great-expectations/bonus-exercise.complete.test.ts" name="Kanban Board &gt; should create a board with a title and an array of default statuses" time="0.002">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/bonus-exercise.complete.test.ts" name="Kanban Board &gt; add a status to a board using #addStatus" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/bonus-exercise.complete.test.ts" name="Kanban Board &gt; have a URL property that has the title in kebab case" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/bonus-exercise.test.ts" timestamp="2024-02-06T06:17:37.601Z" hostname="Loics-MBP" tests="3" failures="0" errors="0" skipped="3" time="0">
+        <testcase classname="src/examples/great-expectations/bonus-exercise.test.ts" name="Kanban Board &gt; should create a board with a title and an array of default statuses" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/bonus-exercise.test.ts" name="Kanban Board &gt; add a status to a board using #addStatus" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/bonus-exercise.test.ts" name="Kanban Board &gt; have a URL property that has the title in kebab case" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/exercise.solution.test.ts" timestamp="2024-02-06T06:17:37.601Z" hostname="Loics-MBP" tests="17" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="should pass if the two numbers would add up correctly in a language other than JavaScript" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="createPerson &gt; should create an instance of a person" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="KanbanBoard &gt; should include &quot;Backlog&quot; in board.statuses" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="KanbanBoard &gt; should not include &quot;Bogus&quot; in board.statuses" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="KanbanBoard &gt; should include an added status in board.statuses using #addStatus" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="KanbanBoard &gt; should remove a status using #removeStatus" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will create a person with a first name" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will create a person with a first and last name" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will create a person with a first, middle, and last name" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will throw if you provide an empty string" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will throw a specific error message if you provide an empty string" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will add a friend" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will mutually add a friend" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will remove a friend" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="Person &gt; will mutually remove friends" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="explode &gt; should throw an error" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.solution.test.ts" name="explode &gt; should throw a specific error" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/exercise.test.ts" timestamp="2024-02-06T06:17:37.602Z" hostname="Loics-MBP" tests="17" failures="0" errors="0" skipped="17" time="0.001">
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="should pass if the two numbers would add up correctly in a language other than JavaScript" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="createPerson &gt; should create an instance of a person" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Kanban Board &gt; should include &quot;Backlog&quot; in board.statuses" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Kanban Board &gt; should *not* include &quot;Bogus&quot; in board.statuses" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Kanban Board &gt; should include an added status in board.statuses using #addStatus" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Kanban Board &gt; should remove a status using #removeStatus" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will create a person with a first name" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will create a person with a first and last name" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will create a person with a first, middle, and last name" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will throw if you provide an empty string" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will throw a specific error message if you provide an empty string" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will add a friend" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will mutually add a friend" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will remove a friend" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="Person &gt; will mutually remove friends" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="explode &gt; should throw an error" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/exercise.test.ts" name="explode &gt; should throw a specific error containing &quot;terribly wrong&quot;" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/items-slice.solution.test.ts" timestamp="2024-02-06T06:17:37.603Z" hostname="Loics-MBP" tests="8" failures="0" errors="0" skipped="0" time="0.003">
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="returns an empty array as the initial state" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="supports adding an item with the correct name" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="prefixes ids with &quot;item-&quot;" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="defaults new items to a packed status of false" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="supports removing an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="supports toggling an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="supports updating an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.solution.test.ts" name="supports marking all items as unpacked" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/items-slice.test.ts" timestamp="2024-02-06T06:17:37.603Z" hostname="Loics-MBP" tests="8" failures="0" errors="0" skipped="7" time="0.002">
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="returns an empty array as the initial state" time="0.002">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="supports adding an item with the correct name" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="prefixes ids with &quot;item-&quot;" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="defaults new items to a packed status of false" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="supports removing an item" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="supports toggling an item" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="supports updating an item" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/great-expectations/items-slice.test.ts" name="supports marking all items as unpacked" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/objects.test.ts" timestamp="2024-02-06T06:17:37.604Z" hostname="Loics-MBP" tests="8" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toBe &gt; objects should not be strictly equal" time="0.004">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toBe &gt; arrays should be strictly equal" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toBe &gt; functions should to be strictly equal" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toEqual &gt; similar objects should pass with #toEqual" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toEqual &gt; similar nested objects should pass with #toEqual" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toEqual &gt; similar arrays should pass with #toEqual" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toEqual &gt; similar multi-dimensional arrays should pass with #toEqual" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/objects.test.ts" name="toEqual &gt; functions should to be strictly equal if compared by reference" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/great-expectations/primitives.test.ts" timestamp="2024-02-06T06:17:37.604Z" hostname="Loics-MBP" tests="6" failures="0" errors="0" skipped="0" time="0.003">
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="strings should be strictly equal" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="numbers should be strictly equal" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="booleans should be strictly equal" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="undefined should be strictly equal to itself" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="null should be strictly equal to itself" time="0">
+        </testcase>
+        <testcase classname="src/examples/great-expectations/primitives.test.ts" name="BigInts should be strickly equal" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list-revisited/item-list.test.tsx" timestamp="2024-02-06T06:17:37.605Z" hostname="Loics-MBP" tests="2" failures="0" errors="0" skipped="0" time="0.027">
+        <testcase classname="src/examples/packing-list-revisited/item-list.test.tsx" name="should render" time="0.012">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/item-list.test.tsx" name="should display items" time="0.013">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list-revisited/packing-list.test.tsx" timestamp="2024-02-06T06:17:37.605Z" hostname="Loics-MBP" tests="7" failures="0" errors="0" skipped="0" time="0.196">
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="renders the Packing List PackingList" time="0.015">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="has the correct title" time="0.007">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="has an input field for a new item" time="0.004">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="has a &quot;Add New Item&quot; button that is disabled when the input is empty" time="0.02">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="enables the &quot;Add New Item&quot; button when there is text in the input field" time="0.049">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="adds a new item to the unpacked item list when the clicking &quot;Add New Item&quot;" time="0.046">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/packing-list.test.tsx" name="removes an item when the remove button is clicked" time="0.054">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list/item-list.test.tsx" timestamp="2024-02-06T06:17:37.605Z" hostname="Loics-MBP" tests="2" failures="0" errors="0" skipped="0" time="0.021">
+        <testcase classname="src/examples/packing-list/item-list.test.tsx" name="should render" time="0.01">
+        </testcase>
+        <testcase classname="src/examples/packing-list/item-list.test.tsx" name="should display items" time="0.01">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list/packing-list.solution.test.tsx" timestamp="2024-02-06T06:17:37.605Z" hostname="Loics-MBP" tests="7" failures="0" errors="0" skipped="0" time="0.195">
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="renders the Packing List application" time="0.014">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="has the correct title" time="0.007">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="has an input field for a new item" time="0.004">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="has a &quot;Add New Item&quot; button that is disabled when the input is empty" time="0.022">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="enables the &quot;Add New Item&quot; button when there is text in the input field" time="0.048">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="adds a new item to the unpacked item list when the clicking &quot;Add New Item&quot;" time="0.047">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.solution.test.tsx" name="removes an item when the remove button is clicked" time="0.05">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list/packing-list.test.tsx" timestamp="2024-02-06T06:17:37.606Z" hostname="Loics-MBP" tests="6" failures="0" errors="0" skipped="4" time="0.023">
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="renders the Packing List application" time="0.016">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="has the correct title" time="0.007">
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="has an input field for a new item" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="has a &quot;Add New Item&quot; button that is disabled when the input is empty" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="enables the &quot;Add New Item&quot; button when there is text in the input field" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/examples/packing-list/packing-list.test.tsx" name="adds a new item to the unpacked item list when the clicking &quot;Add New Item&quot;" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/parallelizing-tests/sleep.test.ts" timestamp="2024-02-06T06:17:37.606Z" hostname="Loics-MBP" tests="4" failures="0" errors="0" skipped="0" time="1.503">
+        <testcase classname="src/examples/parallelizing-tests/sleep.test.ts" name="sleep &gt; should sleep for 500ms" time="0.502">
+        </testcase>
+        <testcase classname="src/examples/parallelizing-tests/sleep.test.ts" name="sleep &gt; should sleep for 750ms" time="0.751">
+        </testcase>
+        <testcase classname="src/examples/parallelizing-tests/sleep.test.ts" name="sleep &gt; should sleep for 1000ms" time="1.002">
+        </testcase>
+        <testcase classname="src/examples/parallelizing-tests/sleep.test.ts" name="sleep &gt; should sleep for 1500ms" time="1.502">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/parameterizing-tests/polygon.complete.test.ts" timestamp="2024-02-06T06:17:37.606Z" hostname="Loics-MBP" tests="50" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="createPolygon &gt; should create an object that is an instance of the Polygon class" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; should throw an error if given less than 3 sides" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 3 sides should be considered a triangle" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 4 sides should be considered a quadrilateral" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 5 sides should be considered a pentagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 6 sides should be considered a hexagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 7 sides should be considered a heptagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 8 sides should be considered a octagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 9 sides should be considered a nonagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="Polygon &gt; a polygon with 10 sides should be considered a decagon" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;triangle&apos; &gt; should have 3 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;triangle&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;triangle&apos; &gt; should have the correct sum of its angles" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;triangle&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;triangle&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;quadrilateral&apos; &gt; should have 4 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;quadrilateral&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;pentagon&apos; &gt; should have 5 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;pentagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;pentagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;pentagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;pentagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;hexagon&apos; &gt; should have 6 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;hexagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;hexagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;hexagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;hexagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;heptagon&apos; &gt; should have 7 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;heptagon&apos; &gt; should have the correct type" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;heptagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;heptagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;heptagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;octagon&apos; &gt; should have 8 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;octagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;octagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;octagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;octagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;nonagon&apos; &gt; should have 9 sides" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;nonagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;nonagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;nonagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;nonagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;decagon&apos; &gt; should have 10 sides" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;decagon&apos; &gt; should have the correct type" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;decagon&apos; &gt; should have the correct sum of its angles" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;decagon&apos; &gt; should have the correct perimeter" time="0">
+        </testcase>
+        <testcase classname="src/examples/parameterizing-tests/polygon.complete.test.ts" name="&apos;decagon&apos; &gt; should have the correct area" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/parameterizing-tests/polygon.test.ts" timestamp="2024-02-06T06:17:37.609Z" hostname="Loics-MBP" tests="1" failures="0" errors="0" skipped="0" time="0.002">
+        <testcase classname="src/examples/parameterizing-tests/polygon.test.ts" name="createPolygon &gt; should create an object that is an instance of the Polygon class" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/snapshot-tests/polygon.complete.test.ts" timestamp="2024-02-06T06:17:37.609Z" hostname="Loics-MBP" tests="1" failures="0" errors="0" skipped="0" time="0.004">
+        <testcase classname="src/examples/snapshot-tests/polygon.complete.test.ts" name="Polygon &gt; should match the snapshot" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/test-context/context.test.ts" timestamp="2024-02-06T06:17:37.609Z" hostname="Loics-MBP" tests="3" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="src/examples/test-context/context.test.ts" name="should work" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/test-context/context.test.ts" name="should really work" time="0">
+        </testcase>
+        <testcase classname="src/examples/test-context/context.test.ts" name="should have version of `expect` bound to the current test" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/test-context/extending-context.test.ts" timestamp="2024-02-06T06:17:37.609Z" hostname="Loics-MBP" tests="3" failures="0" errors="0" skipped="0" time="0.005">
+        <testcase classname="src/examples/test-context/extending-context.test.ts" name="should work" time="0">
+        </testcase>
+        <testcase classname="src/examples/test-context/extending-context.test.ts" name="should really work" time="0">
+        </testcase>
+        <testcase classname="src/examples/test-context/extending-context.test.ts" name="should have version of `expect` bound to the current test" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/time-zone/time-zone.test.tsx" timestamp="2024-02-06T06:17:37.609Z" hostname="Loics-MBP" tests="2" failures="0" errors="0" skipped="0" time="0.017">
+        <testcase classname="src/examples/time-zone/time-zone.test.tsx" name="it should render successfully" time="0.01">
+        </testcase>
+        <testcase classname="src/examples/time-zone/time-zone.test.tsx" name="should match the snapshot" time="0.006">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list-revisited/store/items-slice.test.ts" timestamp="2024-02-06T06:17:37.610Z" hostname="Loics-MBP" tests="6" failures="0" errors="0" skipped="0" time="0.002">
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="returns an empty object as the initial state" time="0">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="supports adding an item" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="supports removing an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="supports toggling an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="supports updating an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/packing-list-revisited/store/items-slice.test.ts" name="supports marking all items as unpacked" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/examples/packing-list/store/items-slice.test.ts" timestamp="2024-02-06T06:17:37.610Z" hostname="Loics-MBP" tests="6" failures="0" errors="0" skipped="0" time="0.02">
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="returns an empty object as the initial state" time="0.013">
+        </testcase>
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="supports adding an item" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="supports removing an item" time="0.001">
+        </testcase>
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="supports toggling an item" time="0.002">
+        </testcase>
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="supports updating an item" time="0">
+        </testcase>
+        <testcase classname="src/examples/packing-list/store/items-slice.test.ts" name="supports marking all items as unpacked" time="0">
+        </testcase>
+    </testsuite>
+</testsuites>
