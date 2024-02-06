@@ -57,7 +57,7 @@ jobs:
           echo "$RELEASE_LEVEL"
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          npm run release-it-$RELEASE_LEVEL -- --github.assets=reports/results/*.zip
+          npm run release-it-$RELEASE_LEVEL -- --github.assets=*.zip
         env:
           RELEASE_LEVEL: ${{ github.event.inputs.version_inc || 'patch' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
