@@ -54,7 +54,7 @@ jobs:
 
       - name: Release with release-it 🥳🥳🥳
         run: |
-          echo "$RELEASE_LEVEL"
+          echo "$RELEASE_LEVEL 🥳🥳🥳🥳🎉🎉🎉🎉🎉"
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           npm run release-it-$RELEASE_LEVEL -- --github.assets=*.zip
