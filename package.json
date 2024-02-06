@@ -84,7 +84,8 @@
     "github": {
       "release": true,
       "preRelease": false,
-      "draft": false
+      "draft": false,
+      "autoGenerate": true
     },
     "npm": {
       "publish": false
