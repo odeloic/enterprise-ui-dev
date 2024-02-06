@@ -17,7 +17,7 @@
     "release-it-patch": "release-it patch -n --verbose",
     "release-it-minor": "release-it minor -n --verbose",
     "release-it-major": "release-it major -n --verbose",
-    "release": "release --no-increment --no-git --github.update"
+    "release": "release-it --no-increment --no-git --github.update"
   },
   "keywords": [
     "react",
