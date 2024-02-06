@@ -1,7 +1,7 @@
 {
   "name": "enterprise-ui",
   "version": "4.1.1",
-  "description": "Example ++++ code and exercises for Steve's \"Enterprise UI Development\" course for Frontend Masters.",
+  "description": "Example ++++ssss code and exercises for Steve's \"Enterprise UI Development\" course for Frontend Masters.",
   "main": "./src/main.ts",
   "type": "module",
   "scripts": {
