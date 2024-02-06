@@ -83,9 +83,7 @@
     "github": {
       "release": true,
       "draft": true,
-      "assets": [
-        "reports/*"
-      ]
+      "assets": ["reports/*.zip"]
     },
     "npm": {
       "publish": false
