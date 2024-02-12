@@ -1,6 +1,6 @@
 {
   "name": "enterprise-ui",
-  "version": "4.2.1",
+  "version": "6.0.0",
   "description": "Example ++++ssss code and exercises for Steve's \"Enterprise UI Development\" course for Frontend Masters.",
   "main": "./src/main.ts",
   "type": "module",
