@@ -55,8 +55,7 @@ jobs:
           echo "$RELEASE_LEVEL"
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          RELEASE_TAG=$(npm run release-it-$RELEASE_LEVEL -- --github.assets=*.zip)
-          echo $RELEASE_TAG
+          npm run release-it-$RELEASE_LEVEL -- --github.assets=*.zip
         env:
           RELEASE_LEVEL: ${{ github.event.inputs.version_inc || 'patch' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -69,7 +68,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Get latest tag
         run: |
-          image_version=$(echo ${{ github.ref }} | awk -F'/' '{print $3}')
+          image_version=$(echo git tag --sort=taggerdate | tail -1)
           echo "Latest tag: $image_version"
       
         

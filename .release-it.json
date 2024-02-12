@@ -1,7 +1,7 @@
 {
     "hooks": {
       "before:init": "git fetch --prune --prune-tags origin",
-      "after:release": "echo v${version}"
+      "after:release": "echo released v${version}"
     },
     "git": {
       "commit": false,
