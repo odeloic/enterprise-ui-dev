@@ -26,8 +26,6 @@ jobs:
   publish-release-notes:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
       - uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -65,12 +63,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   say-nice-things:
-    needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
-      - name: Print me
-        run: echo "The release version was $VERSION"
-        env:
-          VERSION: ${{ needs.publish-release-notes.outputs.VERSION }}
+      - uses: actions/checkout@v4
+        with:
+          ref: 'main'
+      - name: Get latest tag
+        run: |
+            latest_tag=$(git describe --tags --abbrev-commit || echo '')
+            echo "Latest tag: $latest_tag"
       
         
