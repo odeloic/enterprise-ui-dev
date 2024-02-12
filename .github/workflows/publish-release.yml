@@ -70,7 +70,7 @@ jobs:
           ref: 'main'
       - name: Get latest tag
         run: |
-            latest_tag=$(git describe --tags --abbrev-commit || echo '')
-            echo "Latest tag: $latest_tag"
+          image_version=$(echo ${{ github.ref }} | awk -F'/' '{print $3}')
+            echo "Latest tag: $image_version"
       
         
