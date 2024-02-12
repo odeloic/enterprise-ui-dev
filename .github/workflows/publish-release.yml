@@ -73,7 +73,8 @@ jobs:
       - uses: oprypin/find-latest-tag@v1
         with:
           repository: ${{ github.repository }}
-          releases-only: true
+          prefix: 'v'
+          releases-only: false
         id: release-tag
       
       - run: echo "This bit is @ version ${{ steps.release-tag.outputs.tag }}"
