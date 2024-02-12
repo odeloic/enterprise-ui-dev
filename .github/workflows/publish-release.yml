@@ -63,12 +63,13 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   say-nice-things:
+    needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Get latest tag
         run: |
-          image_version=$(echo git tag --sort=taggerdate | tail -1)
+          image_version=$(git tag --sort=taggerdate | tail -1)
           echo "Latest tag: $image_version"
       
         
