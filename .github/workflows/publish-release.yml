@@ -70,10 +70,12 @@ jobs:
     needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Get latest tag
-        run: |
-          image_version=$(git tag --sort=taggerdate | tail -1)
-          echo "Latest tag: ${{ needs.publish-release-notes.outputs.release-tag.TAG }}"
+      - uses: oprypin/find-latest-tag@v1
+        with:
+          repository: ${{ github.repository }}
+          releases-only: true
+        id: release-tag
+      
+      - run: echo "This bit is @ version ${{ steps.release-tag.outputs.tag }}"
       
         
