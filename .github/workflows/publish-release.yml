@@ -70,13 +70,18 @@ jobs:
     needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
-      - uses: oprypin/find-latest-tag@v1
-        with:
-          repository: ${{ github.repository }}
-          prefix: 'v'
-          releases-only: false
-        id: release-tag
+      - uses: ubuntu-latest
+      - name: install jq
+        run: |
+          sudo apt update
+          sudo apt install -y jq
+          jq --version
       
-      - run: echo "This bit is @ version ${{ steps.release-tag.outputs.tag }}"
-      
+      - uses: actions/checkout@v3
+        
+      - name: Get version name from package.json
+        run: |
+          RELEASE_VERSION=$(jq -r '.version' package.json)
+          echo $RELEASE_VERSION
+
         
