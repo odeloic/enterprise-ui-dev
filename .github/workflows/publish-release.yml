@@ -25,6 +25,8 @@ env:
 jobs:
   publish-release-notes:
     runs-on: ubuntu-latest
+    outputs:
+      release_version: ${{ steps.release-tag.outputs.release_version}}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
@@ -73,8 +75,8 @@ jobs:
         id: release-tag
         run: |
           jq -r '.version' package.json
-          echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
-          echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
+          jq -r '.version' package.json
+          echo "release_version=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
           
         
 
@@ -84,10 +86,10 @@ jobs:
     steps:
       - name: Get version name last @job
         env:
-          RELEASE_V: ${{ needs.publish-release-notes.outputs.RELEASE_VERSION }}
-          RELEASE_VE: ${{ env.RELEASE_VERSION }}
+          RELEASE_V: ${{ needs.publish-release-notes.outputs.release_version }}
 
         run: |
-          echo $RELEASE_V
+          echo ${{ env.RELEASE_V }}
+          echo Hellouuurrr
 
         
