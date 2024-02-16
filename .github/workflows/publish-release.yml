@@ -76,7 +76,7 @@ jobs:
         run: |
           jq -r '.version' package.json
           jq -r '.version' package.json
-          echo "release_version=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
+          echo "release_version=v$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
           
         
 
@@ -90,6 +90,4 @@ jobs:
 
         run: |
           echo ${{ env.RELEASE_V }}
-          echo Hellouuurrr
-
         
