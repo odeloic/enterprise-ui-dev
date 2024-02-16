@@ -73,6 +73,7 @@ jobs:
         id: release-tag
         run: |
           echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
+          echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
           
         
 
@@ -82,7 +83,9 @@ jobs:
     steps:
       - name: Get version name last @job
         env:
-          RELEASE_V: ${{ needs.publish-release-notes.outputs }}
+          RELEASE_V: ${{ needs.publish-release-notes.outputs.RELEASE_VERSION }}
+          RELEASE_VE: ${{ env.RELEASE_VERSION }}
+
         run: |
           echo $RELEASE_V
 
