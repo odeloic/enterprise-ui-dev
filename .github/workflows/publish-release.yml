@@ -62,25 +62,30 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: install jq
+        run: |
+          sudo apt update
+          sudo apt install -y jq
+          jq --version    
+
+      - name: Get release version and save it to output
+        id: release-tag
+        run: |
+          RELEASE_VERSION=$(jq -r '.version' package.json)
+          echo v$RELEASE_VERSION >> $GITHUB_OUTPUT
     outputs:
-      release-tag: ${{ steps.release-it.outputs.TAG }}
+      release-tag: ${{ steps.release-tag.outputs }}
         
 
   say-nice-things:
     needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
-      - name: install jq
+      - name: Get version name last @job
+        env:
+          RELEASE_V: ${{needs.publish-release-notes.outputs.release-tag}}
         run: |
-          sudo apt update
-          sudo apt install -y jq
-          jq --version
-      
-      - uses: actions/checkout@v3
-        
-      - name: Get version name from package.json
-        run: |
-          RELEASE_VERSION=$(jq -r '.version' package.json)
-          echo $RELEASE_VERSION
+          echo $RELEASE_V
 
         
