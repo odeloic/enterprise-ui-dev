@@ -65,14 +65,14 @@ jobs:
 
       - name: install jq
         run: |
-          sudo apt update
-          sudo apt install -y jq
+          sudo apt-get update
+          sudo apt-get install -y jq
           jq --version    
 
       - name: Get release version and save it to output
         id: release-tag
         run: |
-          echo RELEASE_VERSION=$(jq -r '.version' package.json) >> $GITHUB_OUTPUT
+          echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
           
         
 
@@ -82,7 +82,7 @@ jobs:
     steps:
       - name: Get version name last @job
         env:
-          RELEASE_V: ${{ needs.publish-release-notes.outputs.RELEASE_VERSION }}
+          RELEASE_V: ${{ needs.publish-release-notes.outputs }}
         run: |
           echo $RELEASE_V
 
