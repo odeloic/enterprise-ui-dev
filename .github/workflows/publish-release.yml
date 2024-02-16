@@ -82,7 +82,7 @@ jobs:
     steps:
       - name: Get version name last @job
         env:
-          RELEASE_V: ${{ steps.release-tag.outputs.RELEASE_VERSION }}
+          RELEASE_V: ${{ needs.publish-release-notes.outputs.RELEASE_VERSION }}
         run: |
           echo $RELEASE_V
 
