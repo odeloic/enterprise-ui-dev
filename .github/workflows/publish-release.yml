@@ -85,9 +85,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get version name last @job
-        env:
-          RELEASE_V: ${{ needs.publish-release-notes.outputs.release_version }}
-
         run: |
-          echo ${{ env.RELEASE_V }}
+          echo ${{ needs.publish-release-notes.outputs.release_version }}
         
