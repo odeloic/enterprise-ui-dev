@@ -4,10 +4,12 @@
       "after:release": "echo TAG=v${version} >> $GITHUB_OUTPUT"
     },
     "git": {
-      "commit": false,
+      "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+      "commit": true,
+      "commitMessage": "release:v ${version}",
       "tag": true,
       "requireUpstream": true,
-      "requireCleanWorkingDir": false,
+      "requireCleanWorkingDir": true,
       "push": true,
       "tagName": "v${version}"
     },
