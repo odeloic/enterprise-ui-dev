@@ -67,10 +67,8 @@ jobs:
         
 
   say-nice-things:
-    needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
-      - uses: ubuntu-latest
       - name: install jq
         run: |
           sudo apt update
