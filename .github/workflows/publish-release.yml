@@ -72,6 +72,7 @@ jobs:
       - name: Get release version and save it to output
         id: release-tag
         run: |
+          echo jq -r '.version' package.json
           echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
           echo "RELEASE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
           
