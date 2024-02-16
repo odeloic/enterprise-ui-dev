@@ -4,7 +4,6 @@
       "after:release": "echo TAG=v${version} >> $GITHUB_OUTPUT"
     },
     "git": {
-      "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
       "commit": true,
       "commitMessage": "release: v${version}",
       "tag": true,
