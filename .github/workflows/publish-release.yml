@@ -67,6 +67,7 @@ jobs:
         
 
   say-nice-things:
+    needs: publish-release-notes
     runs-on: ubuntu-latest
     steps:
       - name: install jq

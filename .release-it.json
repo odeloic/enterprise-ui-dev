@@ -6,7 +6,7 @@
     "git": {
       "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
       "commit": true,
-      "commitMessage": "release:v ${version}",
+      "commitMessage": "release: v${version}",
       "tag": true,
       "requireUpstream": true,
       "requireCleanWorkingDir": true,
